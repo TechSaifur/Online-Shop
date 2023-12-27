@@ -8,6 +8,7 @@ import Cart from "./components/Cart";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
+import ProductDescription from "./components/Description";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/desc/:productId" element={<ProductDescription />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
